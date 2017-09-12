@@ -1,0 +1,63 @@
+@import './../theme/sass/_variables.scss';
+@import './../theme/sass/_mixins.scss';
+
+.arda_services {
+  background: #EDF1F2 none repeat scroll 0 0;
+  padding-top: 15px;
+  min-height: $full-height-vh;
+  text-align: center;
+}
+
+h1 {
+  color: #333 !important;
+}
+
+.service {
+  background: #fff none repeat scroll 0 0;
+  height: 300px;
+  padding: 20px;
+  margin: 15px 0 20% 0;
+
+  .icon {
+    color: #333;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+
+    i {
+      @include icon(130px, #fff, 90px, 100px, 55px, absolute, 80px, center, -40px);
+      margin: 0 -52px auto;
+      box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.5);
+    }
+  }
+
+  .service-title {
+    @include service-settings(90px, 30px, #333);
+  }
+
+  .service-description {
+    @include service-settings(0, 30px, #333);
+    opacity: 0;
+  }
+
+  &:hover {
+    background-color: $main-color;
+  }
+
+  &:hover .icon {
+    color: $main-color;
+    top: -60px;
+    @include transition(all 400ms linear);
+  }
+
+  &:hover .service-title {
+    @include service-hover-settings(1, #fff, 90px, relative);
+    @include transition(all 1s linear);
+  }
+
+  &:hover .service-description {
+    @include service-hover-settings(1, #fff, 60px, relative);
+    @include transition(all 500ms linear);
+  }
+}
+
