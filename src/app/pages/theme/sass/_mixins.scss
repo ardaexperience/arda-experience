@@ -1,0 +1,42 @@
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin icon($border-radius, $background, $height, $width, $font-size, $position, $line-height, $text-align, $top) {
+  border-radius: $border-radius;
+  background: $background;
+  height: $height;
+  width: $width;
+  font-size: $font-size;
+  position: $position;
+  line-height: $line-height;
+  text-align: $text-align;
+  top: $top;
+}
+
+@mixin dark-overlay-size($width, $min-height){
+  width: $width;
+  min-height: $min-height;
+}
+
+@mixin service-settings($mt, $pt, $color){
+  margin-top: $mt;
+  padding-top: $pt;
+  color: $color;
+}
+
+@mixin service-hover-settings($opacity, $color, $bottom, $position){
+  opacity: $opacity;
+  color: $color;
+  bottom: $bottom;
+  position: $position;
+}

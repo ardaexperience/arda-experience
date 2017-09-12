@@ -1,0 +1,15 @@
+@import './../theme/sass/_variables.scss';
+@import './../theme/sass/_mixins.scss';
+
+%dark-overlay {
+  position: absolute;
+  background-color: $dark-overlay;
+  top: 0;
+  left: 0;
+}
+
+%bg-parallax {
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
