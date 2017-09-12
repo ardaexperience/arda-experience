@@ -1,0 +1,38 @@
+@import "./../theme/sass/_variables.scss";
+@import "./../theme/sass/_mixins.scss";
+
+.navbar {
+  border-bottom: $main-color 2px solid;
+  opacity: 0.95;
+
+ .nav-item.active {
+    border-left: $main-color 0.8px solid;
+
+    .nav-link {
+      color: $main-color;
+    }
+  }
+
+  .navbar-brand {
+    color: white;
+  }
+
+  .navbar-toggler {
+    border: 1px $main-color solid;
+
+    .navbar-toggler-icon {
+      background-color: #CCC;
+    }
+  }
+
+  .nav-link {
+    color: white;
+    font-size: 19px;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
