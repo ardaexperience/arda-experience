@@ -1,0 +1,22 @@
+@import './../theme/sass/_variables.scss';
+@import './../theme/sass/_placeholders.scss';
+@import './../theme/sass/_mixins.scss';
+
+.special-travels {
+
+  .dark-overlay{
+    background: $main-color;
+    height: 80px;
+  }
+
+  .card {
+    margin-top: 20px;
+    img {
+      max-height: 200px;
+    }
+    &:hover {
+      transform: scale(1.025453);
+      @include transition(all 200ms linear);
+    }
+  }
+}

@@ -52,12 +52,12 @@ h1 {
 
   &:hover .service-title {
     @include service-hover-settings(1, #fff, 90px, relative);
-    @include transition(all 1s linear);
+    @include transition(all 200ms linear);
   }
 
   &:hover .service-description {
     @include service-hover-settings(1, #fff, 60px, relative);
-    @include transition(all 500ms linear);
+    @include transition(all 250ms linear);
   }
 }
 

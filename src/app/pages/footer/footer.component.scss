@@ -1,0 +1,18 @@
+@import './../theme/sass/_variables.scss';
+
+footer {
+  position: relative;
+  top: 80px;
+  background: $main-color;
+  min-height: 200px;
+  color: white;
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+  }
+  i {
+    font-size: 1.5em;
+  }
+}

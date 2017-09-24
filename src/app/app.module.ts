@@ -11,7 +11,10 @@ import { NavbarModule } from './pages/navbar/navbar.module';
 import { HeaderModule } from './pages/header/header.module';
 import { ServicesModule } from './pages/services/services.module';
 import { WhyArdaModule } from './pages/why-arda/why-arda.module';
+import { SpecialTravelsModule } from './pages/special-travels/special-travels.module';
+import { HomeTravelsModule } from './pages/home-travels/home-travels.module';
 import { LoginModule } from './pages/login/login.module';
+import { FooterModule } from './pages/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { LoginModule } from './pages/login/login.module';
     NavbarModule,
     HeaderModule,
     ServicesModule,
-    WhyArdaModule
+    WhyArdaModule,
+    SpecialTravelsModule,
+    FooterModule,
+    HomeTravelsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
