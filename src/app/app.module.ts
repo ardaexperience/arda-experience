@@ -15,6 +15,7 @@ import { SpecialTravelsModule } from './pages/special-travels/special-travels.mo
 import { HomeTravelsModule } from './pages/home-travels/home-travels.module';
 import { LoginModule } from './pages/login/login.module';
 import { FooterModule } from './pages/footer/footer.module';
+import { ContactUsModule } from './pages/contact-us/contact-us.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FooterModule } from './pages/footer/footer.module';
     WhyArdaModule,
     SpecialTravelsModule,
     FooterModule,
-    HomeTravelsModule
+    HomeTravelsModule,
+    ContactUsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
