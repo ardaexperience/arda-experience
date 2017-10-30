@@ -1,17 +1,23 @@
-@import './../theme/sass/_variables.scss';
+@import "./../theme/sass/_variables.scss";
 
 footer {
   position: relative;
-  top: 80px;
   background: $main-color;
-  min-height: 200px;
+  min-height: 60px;
   color: white;
+
+  h4 {
+    padding-top: 20px;
+    padding-left: 70px;
+  }
 
   li {
     list-style-type: none;
     display: inline-block;
-    padding: 5px;
+    padding-top: 20px;
+    padding-right: 16px;
   }
+
   i {
     font-size: 1.5em;
   }
