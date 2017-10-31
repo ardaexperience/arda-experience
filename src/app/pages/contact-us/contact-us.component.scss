@@ -1,0 +1,77 @@
+@import "./../theme/sass/_variables.scss";
+@import "./../theme/sass/_mixins.scss";
+@import "./../theme/sass/_placeholders.scss";
+
+h1 {
+  font-size: 32px;
+  color: #333 !important;
+  padding-top: 30px;
+}
+
+.contact-us {
+  position: relative;
+  min-height: 450px;
+  color: #333;
+  background: #edf1f2;
+}
+
+.contact-info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-right: none;
+  padding-left: none;
+
+
+  .icon {
+    position: relative;
+    top: -20px;
+    color: white;
+    padding: 13px 50px 40px 90px;
+  }
+
+  i {
+    @include icon(100px, $main-color, 60px, 60px, 30px, absolute, 60px, center, 0);
+    margin: 0px -60px auto;
+    box-shadow: 6px 6px 20px -4px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    color: white !important;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 20px;
+    text-align: center;
+    width: 45px;
+  }
+
+  li {
+    list-style-type: none;
+    padding: 8px;
+    font-size: 18px;
+    color: #333 !important;
+  }
+}
+
+.contact-form {
+  background: white;
+  height: 500px;
+  padding: 40px;
+  position: absolute;
+
+  .btn-contact-bg {
+    background: $main-color none repeat scroll 0 0 !important;
+    border: 1px solid $main-color !important;
+    color: #fff !important;
+    font-family: montserrat, sans-serif;
+    font-size: 14px;
+    padding: 10px 30px !important;
+    text-transform: uppercase;
+    transition: all 0.2s ease 0s;
+  }
+  .btn-contact-bg:hover,
+  .btn-contact-bg:focus {
+    background: #fff !important;
+    color: $main-color !important;
+  }
+}
+
+
