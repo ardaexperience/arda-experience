@@ -1,9 +1,9 @@
-@import './../theme/sass/_variables.scss';
-@import './../theme/sass/_mixins.scss';
-@import './../theme/sass/_placeholders.scss';
+@import '../../theme/sass/_variables.scss';
+@import '../../theme/sass/_mixins.scss';
+@import '../../theme/sass/_placeholders.scss';
 
 .why-arda {
-  background: url('./../../../assets/teste.jpg');
+  background: url('/assets/teste.jpg');
   @extend %bg-parallax;
   position: relative;
   min-height: 800px;

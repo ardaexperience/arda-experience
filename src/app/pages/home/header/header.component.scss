@@ -1,0 +1,30 @@
+@import '../../theme/sass/_variables.scss';
+@import '../../theme/sass/_placeholders.scss';
+
+@font-face {
+  font-family: "Stackyard_PERSONAL_USE";
+  src: url('/assets/fonts/Stackyard_PERSONAL_USE.ttf');
+}
+
+.home-section{
+  background: url('/assets/teste_parallax.jpg');
+  @extend %bg-parallax;
+  min-height: $full-height-vh;
+
+  .brand-name {
+    font-family: "Stackyard_PERSONAL_USE";
+    font-size: 4em;
+  }
+
+  .dark-overlay{
+    @extend %dark-overlay;
+    @include dark-overlay-size($full-width-vw, $full-height-vh);
+  }
+
+  .home-inner{
+    padding-top: 20%;
+  }
+}
+
+
+

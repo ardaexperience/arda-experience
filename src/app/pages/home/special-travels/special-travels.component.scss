@@ -1,6 +1,6 @@
-@import './../theme/sass/_variables.scss';
-@import './../theme/sass/_placeholders.scss';
-@import './../theme/sass/_mixins.scss';
+@import '../../theme/sass/_variables.scss';
+@import '../../theme/sass/_placeholders.scss';
+@import '../../theme/sass/_mixins.scss';
 
 .special-travels {
 
@@ -18,5 +18,15 @@
       transform: scale(1.025453);
       @include transition(all 200ms linear);
     }
+  }
+
+  .btn-all-travels {
+    @extend %main-button;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn-all-travels {
+    width: 100%;
   }
 }
