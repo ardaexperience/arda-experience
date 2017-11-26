@@ -3397,6 +3397,17 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
+ng2-completer@^1.2.2:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/ng2-completer/-/ng2-completer-1.6.3.tgz#b12c902b786f685c6b1256dd87d746e2abf2e505"
+
+ng2-smart-table@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/ng2-smart-table/-/ng2-smart-table-1.2.2.tgz#1b84d517a62a7982ecca699d3a8dee0a3b122666"
+  dependencies:
+    lodash "^4.17.4"
+    ng2-completer "^1.2.2"
+
 ngx-owl-carousel@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/ngx-owl-carousel/-/ngx-owl-carousel-1.0.1.tgz#2ad05924b5f214e1aca8d3ebc3afc9244cbda57c"

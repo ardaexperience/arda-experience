@@ -1,0 +1,259 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "rg": 509167214,
+      "cpf": 46415828827,
+      "nome": "Rafael Neves",
+      "contato": {
+        "id": 1,
+        "email": "rafaeloliveirans@gmail.com",
+        "telefone": 49725221,
+        "celular": 981885439
+      },
+      "endereco": {
+        "id": 1,
+        "rua": "Lisboa",
+        "numero": 20,
+        "complemento": "Casa de esquina",
+        "bairro": "Centro",
+        "cidade": "São Bernardo do Campo",
+        "uf": "SP",
+        "cep": 123453345
+      },
+      "cartaoCredito": {
+        "id": 1,
+        "nomeCliente": "Rafael Neves",
+        "numeroCartao": 1234567890,
+        "mesExpiracao": "10",
+        "anoExpiracao": "2018"
+      },
+      "usuario": {
+        "id": 1,
+        "usuario": "rafael",
+        "senha": 12345
+      }
+    },
+    {
+      "id": 2,
+      "rg": 380681158,
+      "cpf": 34123224554,
+      "nome": "Felipe Francischetto",
+      "contato": {
+        "id": 1,
+        "email": "felipe@gmail.com",
+        "telefone": 49725221,
+        "celular": 984927654
+      },
+      "endereco": {
+        "id": 2,
+        "rua": "Lisboa",
+        "numero": 20,
+        "complemento": "Casa de esquina",
+        "bairro": "Centro",
+        "cidade": "São Mateus",
+        "uf": "SP",
+        "cep": 123453345
+      },
+      "cartaoCredito": {
+        "id": 2,
+        "nomeCliente": "Felipe",
+        "numeroCartao": 1234567890,
+        "mesExpiracao": "10",
+        "anoExpiracao": "2018"
+      },
+      "usuario": {
+        "id": 2,
+        "usuario": "felipe",
+        "senha": 12345
+      }
+    },
+    {
+      "id": 3,
+      "rg": 380681158,
+      "cpf": 34123224554,
+      "nome": "Guilherme Marconi",
+      "contato": {
+        "id": 1,
+        "email": "guilherme@gmail.com",
+        "telefone": 49725221,
+        "celular": 984927654
+      },
+      "endereco": {
+        "id": 3,
+        "rua": "Lisboa",
+        "numero": 20,
+        "complemento": "Casa de esquina",
+        "bairro": "Centro",
+        "cidade": "São Bernardo do Campo",
+        "uf": "SP",
+        "cep": 123453345
+      },
+      "cartaoCredito": {
+        "id": 3,
+        "nomeCliente": "Guilherme",
+        "numeroCartao": 1234567890,
+        "mesExpiracao": "10",
+        "anoExpiracao": "2018"
+      },
+      "usuario": {
+        "id": 3,
+        "usuario": "guilherme",
+        "senha": 12345
+      }
+    }
+  ],
+  "roteiros": [
+    {
+      "id": 1,
+      "detalhesRoteiro": {
+        "nome": "Senhor dos Anéis",
+        "custo": 3000,
+        "preco": 6000,
+        "duracao": "5 dias"
+      },
+      "card": {
+        "titulo": "Senhor dos Anéis",
+        "enderecoImagem": "https://i.ytimg.com/vi/9qwfXWkU5eA/maxresdefault.jpg"
+      },
+      "pagina": {
+        "titulo": "Senhor dos Anéis",
+        "avaliacao": 5,
+        "imagens": [
+          {
+            "enderecoImagem": "https://i.ytimg.com/vi/9qwfXWkU5eA/maxresdefault.jpg"
+          },
+          {
+            "enderecoImagem": "https://images5.alphacoders.com/614/614690.jpg"
+          }
+        ],
+        "descricao": "É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é ",
+        "trajetos": [
+          {
+            "nome": "Dia 01 - Estadia em Hobbiton",
+            "descricao": "No primeiro dia você visitará Hobbiton e conhecerá o local onde foi filmado o melhor filme do mundo",
+            "enderecoImagem": "https://twistedsifter.files.wordpress.com/2015/03/hobbiton-movie-set-tour-new-zealand-2.jpg?w=800&h=534"
+          },
+          {
+            "nome": "Dia 02 - Estadia em Hobbiton",
+            "descricao": "No segundo dia você visitará Hobbiton e conhecerá o local onde foi filmado o melhor filme do mundo",
+            "enderecoImagem": "http://farm1.nzstatic.com/_proxy/imageproxy_1y/serve/b753e9b9-b7b2-4479-9378-40a7a2c874fd-2016512131454.jpg?outputformat=jpg&quality=60&transformationsystem=crop&width=450&height=270&source=http://media.newzealand.com/getattachment/b753e9b9-b7b2-4479-9378-40a7a2c874fd/b753e9b9-b7b2-4479-9378-40a7a2c874fd-2016512131454.jpg&securitytoken=85E524E618068C254D045EA3D2DD02A7"
+          },
+          {
+            "nome": "Dia 03 - Estadia em Hobbiton",
+            "descricao": "No terceiro dia você visitará Hobbiton e conhecerá o local onde foi filmado o melhor filme do mundo",
+            "enderecoImagem": "https://twistedsifter.files.wordpress.com/2015/03/hobbiton-movie-set-tour-new-zealand-12.jpg?w=800&h=534"
+          }
+        ],
+        "clima": "Tropical",
+        "moedaLocal": "Dólar",
+        "fusoHorario": "GMT 03:00",
+        "idioma": "Élfico"
+      }
+    },
+    {
+      "id": 2,
+      "detalhesRoteiro": {
+        "nome": "Game of Thrones",
+        "custo": 3000,
+        "preco": 6000,
+        "duracao": "5 dias"
+      },
+      "card": {
+        "titulo": "Game of Thrones",
+        "enderecoImagem": "https://www.einerd.com.br/wp-content/uploads/2016/03/gameofthrones01.jpg"
+      },
+      "pagina": {
+        "titulo": "Game of Thrones",
+        "avaliacao": 5,
+        "imagens": [
+          {
+            "enderecoImagem": "https://www.einerd.com.br/wp-content/uploads/2016/03/gameofthrones01.jpg"
+          },
+          {
+            "enderecoImagem": "http://www.sbs.com.au/guide/sites/sbs.com.au.guide/files/styles/full/public/got_2.jpg?itok=D1lF0ndn&mtime=1470126117"
+          }
+        ],
+        "descricao": "Conheça o local de gravação de umas das séries mais aclamadas de todos os tempos",
+        "trajetos": [
+          {
+            "nome": "Dia 01 - Estadia em GoT",
+            "descricao": "No primeiro dia você visitará Hobbiton e conhecerá o local onde foi filmado o melhor filme do mundo",
+            "enderecoImagem": "https://www.brabbu.com/blog/wp-content/uploads/2015/06/travelling-through-game-of-thrones-scenarios-6.jpg"
+          },
+          {
+            "nome": "Dia 02 - Estadia em GoT",
+            "descricao": "No segundo dia você visitará Hobbiton e conhecerá o local onde foi filmado o melhor filme do mundo",
+            "enderecoImagem": "http://www.imagefully.com/wp-content/uploads/2015/10/Travelling-Through-Game-Of-Thrones-Scenarios-Castle-Image.jpg"
+          },
+          {
+            "nome": "Dia 03 - Estadia em GoT",
+            "descricao": "No terceiro dia você visitará Hobbiton e conhecerá o local onde foi filmado o melhor filme do mundo",
+            "enderecoImagem": "https://www.travelmanagers.com.au/wp-content/uploads/2016/05/iStock_000051235978_Medium.jpg"
+          }
+        ],
+        "clima": "Tropical",
+        "moedaLocal": "Dólar",
+        "fusoHorario": "GMT 03:00",
+        "idioma": "Élfico"
+      }
+    },
+    {
+      "id": 3,
+      "detalhesRoteiro": {
+        "nome": "A Praia",
+        "custo": 3000,
+        "preco": 6000,
+        "duracao": "5 dias"
+      },
+      "card": {
+        "titulo": "A Praia",
+        "enderecoImagem": "https://360go.com.br/wp-content/uploads/2016/09/Maya-Bay-3-1000x675.jpg"
+      },
+      "pagina": {
+        "titulo": "A Praia",
+        "avaliacao": 5,
+        "imagens": [
+          {
+            "enderecoImagem": "https://pt.best-wallpaper.net/wallpaper/2560x1600/1201/Phi-Phi-Islands_2560x1600.jpg"
+          },
+          {
+            "enderecoImagem": "https://abrilviagemeturismo.files.wordpress.com/2016/12/koh-phi-phi-eulinkyst.jpeg?quality=70&strip=info&w=928"
+          }
+        ],
+        "descricao": "Conheça onde foi filmado o filme A Praia, nas Ilhas Phi Phi, um local com praias maravilhosas",
+        "trajetos": [
+          {
+            "nome": "Os 5 Dias - Aventura nas Ilhas Phi Phi",
+            "descricao": "Nos 5 dias de Aventura você se maravilhará com as belezas naturais da Ilha Phi Phi",
+            "enderecoImagem": "https://abrilviagemeturismo.files.wordpress.com/2016/12/koh-phi-phi-eulinkyst.jpeg?quality=70&strip=info&w=928"
+          }
+        ],
+        "clima": "Tropical",
+        "moedaLocal": "Dólar",
+        "fusoHorario": "GMT 03:00",
+        "idioma": "Inglês"
+      }
+    }
+  ],
+  "pedidos": [
+    {
+      "id": 1,
+      "dataEfetuacaoPedido": "Nov 14, 2017 12:00:00 AM",
+      "detalhesPedido": {
+        "id": 1,
+        "detalhesRoteiro": {
+          "id": 1,
+          "nome": "Senhor dos Anéis",
+          "custo": 3000.0,
+          "preco": 6000.0,
+          "duracao": "5 dias"
+        },
+        "estadoPedido": "Em andamento",
+        "quantidadePessoas": 4,
+        "dataViagem": "Dec 12, 2018 12:00:00 AM",
+        "subtotal": 240000.0
+      }
+    }
+  ]
+}
