@@ -1,6 +1,25 @@
-@import './../theme/sass/_variables.scss';
+@import '../theme/sass/_variables.scss';
+@import '../theme/sass/_placeholders.scss';
 
-span {
-  background: transparent;
-  color: $main-color;
+#login {
+  margin-top: 5%;
+
+  .form-sign {
+    margin: 0 auto;
+    max-width: 50%;
+
+    .btn-login{
+      @extend %main-button;
+      width: 100%;
+      &:hover {
+        background-color: white !important;
+        color: $main-color !important;
+      }
+    }
+    
+    .register {
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
 }

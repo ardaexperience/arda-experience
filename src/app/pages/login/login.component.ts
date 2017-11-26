@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -8,11 +8,20 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class LoginComponent implements OnInit {
 
-  @Input() name;
+  form: FormGroup;
 
-  constructor(public activeModal: NgbActiveModal) { }
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+
+    this.form = this.formBuilder.group({
+      user: ['', Validators.required],
+      password: ['', Validators.required]
+    })
+  }
+
+  login() {
+
   }
 
 }

@@ -1,0 +1,19 @@
+@import '../theme/sass/_variables.scss';
+@import '../theme/sass/_placeholders.scss';
+
+#login {
+    margin-top: 05%;
+    .form-signup{
+        margin: 0 auto;
+        max-width: 50%;
+        
+        .btn-register {
+            @extend %main-button;
+            width: 100%;
+             &:hover {
+                background-color: white !important;
+                color: $main-color !important;
+            }
+        }
+    }
+}
