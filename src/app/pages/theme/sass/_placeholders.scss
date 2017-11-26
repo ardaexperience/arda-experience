@@ -1,5 +1,5 @@
-@import './../theme/sass/_variables.scss';
-@import './../theme/sass/_mixins.scss';
+@import './_variables.scss';
+@import './_mixins.scss';
 
 %dark-overlay {
   position: absolute;
@@ -12,4 +12,19 @@
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+}
+
+%main-button {
+  background: $main-color none repeat scroll 0 0 !important;
+  border: 1px solid $main-color !important;
+  color: #fff !important;
+  font-family: montserrat, sans-serif;
+  font-size: 14px;
+  padding: 10px 30px !important;
+  text-transform: uppercase;
+  transition: all 0.2s ease 0s;
+  &:hover {
+    background-color: white !important;
+    color: $main-color !important;
+  }
 }
