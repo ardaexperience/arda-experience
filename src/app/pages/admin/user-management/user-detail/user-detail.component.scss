@@ -1,0 +1,10 @@
+@import '../../../theme/sass/_variables.scss';
+@import '../../../theme/sass/_placeholders.scss';
+
+#user-detail {
+    margin-top: 7%;
+}
+
+.btn-save {
+    @extend %main-button;
+}

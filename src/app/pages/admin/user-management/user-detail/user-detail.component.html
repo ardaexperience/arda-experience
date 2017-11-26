@@ -1,0 +1,227 @@
+<form [formGroup]="form">
+
+  <section id="user-detail">
+
+    <div class="container">
+
+      <!-- General information -->
+      <section>
+
+        <div class="row">
+
+          <div class="col-12">
+
+            <h4>Informações do cliente {{ client?.nome }} </h4>
+
+            <div class="row">
+
+              <div class="col-md-4 col-xs-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nome completo</label>
+                  <input type="text" class="form-control" formControlName="nome" placeholder="Nome completo">
+                </div>
+              </div>
+
+              <div class="col-md-4 col-xs-12">
+                <div class="form-group">
+                  <label for="exampleInputPassword1">RG</label>
+                  <input type="text" class="form-control" formControlName="rg" placeholder="RG">
+                </div>
+              </div>
+
+              <div class="col-md-4 col-xs-12">
+                <div class="form-group">
+                  <label for="exampleInputPassword1">CPF</label>
+                  <input type="text" class="form-control" formControlName="cpf" placeholder="CPF">
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- End General information -->
+
+
+      <!-- Contact Information -->
+      <section class="mt-3" formGroupName="contato">
+
+        <div class="row">
+
+          <div class="col-12">
+
+            <h5>Contato</h5>
+
+            <div class="row">
+
+              <div class="col-md-4 col-xs-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">E-mail</label>
+                  <input type="email" class="form-control" formControlName="email" placeholder="E-mail">
+                </div>
+
+              </div>
+
+              <div class="col-md-4 col-xs-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Telefone</label>
+                  <input type="text" class="form-control" formControlName="telefone" placeholder="Telefone">
+                </div>
+
+              </div>
+
+
+              <div class="col-md-4 col-xs-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Celular</label>
+                  <input type="text" class="form-control" formControlName="celular" placeholder="Celular">
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- End Contact information -->
+
+
+      <!-- Address information -->
+      <section class="mt-3" formGroupName="endereco">
+
+        <div class="row">
+
+          <div class="col-12">
+
+            <h5>Endereço</h5>
+
+            <div class="row">
+
+              <div class="col-md-6 col-xs-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Rua</label>
+                  <input type="text" class="form-control" formControlName="rua" placeholder="Rua">
+                </div>
+              </div>
+
+              <div class="col-md-2 col-xs-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Número</label>
+                  <input type="text" class="form-control" formControlName="numero" placeholder="Número">
+                </div>
+              </div>
+
+
+              <div class="col-md-4 col-xs-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Bairro</label>
+                  <input type="text" class="form-control" formControlName="bairro" placeholder="Bairro">
+                </div>
+              </div>
+
+              <div class="col-md-3 col-xs-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Complemento</label>
+                  <input type="text" class="form-control" formControlName="complemento" placeholder="Complemento">
+                </div>
+              </div>
+
+              <div class="col-md-3 col-xs-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">CEP</label>
+                  <input type="text" class="form-control" formControlName="cep" placeholder="CEP">
+                </div>
+              </div>
+
+              <div class="col-md-2 col-xs-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">UF</label>
+                  <input type="text" class="form-control" formControlName="uf" placeholder="UF">
+                </div>
+              </div>
+
+              <div class="col-md-4 col-xs-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Cidade</label>
+                  <input type="text" class="form-control" formControlName="cidade" placeholder="Cidade">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- End Address information -->
+
+      <!-- Credit Card Information -->
+      <section class="mt-3" formGroupName="cartaoCredito">
+        <div class="row">
+          <div class="col-12">
+            <h5>Cartão de Crédito</h5>
+              
+            <div class="row">
+
+            <div class="col-md-3 col-xs-12">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Nome</label>
+                <input type="text" class="form-control" formControlName="nomeCliente" placeholder="Nome">
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-12">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Número</label>
+                <input type="text" class="form-control" formControlName="numeroCartao" placeholder="Número do cartão">
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-12">
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Mês de Expiração</label>
+                  <input type="text" class="form-control" formControlName="mesExpiracao" placeholder="Mês de expiração">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-12">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Ano de Expiração</label>
+                <input type="text" class="form-control" formControlName="anoExpiracao" placeholder="Ano de expiração">
+              </div>
+            </div>
+
+          </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Credit Card Information -->
+
+
+      <section class="mt-4 mb-3">
+
+        <div class="row">
+
+          <div class="col-12">
+
+            <div class="row">
+
+              <div class="col-6">
+                <button class="btn btn-save btn-block">Salvar</button>
+              </div>
+
+              <div class="col-6">
+                <button class="btn btn-secondary btn-block" routerLink="/pages/admin/all-users">Voltar</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+  </section>
+</form>

@@ -1,0 +1,22 @@
+@import '../../../theme/sass/_variables.scss';
+@import '../../../theme/sass/_placeholders.scss';
+
+
+.all-orders {
+    margin-top: 7%;
+}
+
+.btn-detail {
+    // @extend %main-button;
+    background-color: black;
+    color: white;
+    i {
+      font-size: 1.2em;
+    }
+    &:hover {
+      i {
+        color: $main-color;
+      }
+    }
+  }
+  

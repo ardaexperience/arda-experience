@@ -1,0 +1,10 @@
+@import '../../theme/sass/_variables.scss';
+@import '../../theme/sass/_placeholders.scss';
+
+#admin {
+    margin-top: 7%;
+
+    .btn-dashboard {
+        @extend %main-button;
+    }
+}
