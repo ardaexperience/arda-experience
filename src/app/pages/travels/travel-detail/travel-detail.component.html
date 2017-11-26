@@ -1,0 +1,98 @@
+<form [formGroup]="form" (ngSubmit)="enviaDados(form.value)">
+
+  <section id="travel-details">
+    <div class="row">
+      <div class="col-12">
+        <ngb-carousel>
+          <ng-template ngbSlide *ngFor="let imgs of travel?.pagina.imagens">
+            <img class="carousel-image" src="{{imgs.enderecoImagem}}" alt="Travel image">
+
+          </ng-template>
+        </ngb-carousel>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 mt-2">
+              <h2>{{travel?.pagina.titulo}}</h2>
+              <ngb-rating [(rate)]="travel?.pagina.avaliacao" [readonly]="true" [max]="5"></ngb-rating>
+              <p>{{travel?.pagina.descricao}}</p>
+              <div class="row">
+                <div class="col-md-4 col-xs-3">
+                  <h4>Idioma</h4>
+                  <p>{{travel?.pagina.idioma}}</p>
+                </div>
+
+                <div class="col-md-4 col-xs-3">
+                  <h4>Moeda</h4>
+                  <p>{{travel?.pagina.moedaLocal}}</p>
+                </div>
+
+                <div class="col-md-4 col-xs-3">
+                  <h4>Fuso horário</h4>
+                  <p>{{travel?.pagina.fusoHorario}}</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-md-5 col-sm-12 col-xs-12 mt-2">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-6">
+                      <p>
+                        Valor:
+                      </p>
+                      <p class="mt-2">
+                        Pessoas:
+                      </p>
+                      <p class="mt-4">Data de ida:</p>
+                    </div>
+
+                    <div class="col-6">
+                      <p>{{ travelPrice | currency:'BRL':true:'1.2-2' }}</p>
+                      <div class="form-group">
+                        <input type="number" class="form-control" formControlName="numberPeople" (change)="multiplyPrice($event)" value="1" min="1">
+                      </div>
+
+
+                      <div class="form-group" style="width: 100% !important;">
+                        <div class="input-group">
+                          <input class="form-control" name="dp" formControlName="date" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+                          <button class="input-group-addon" (click)="d.toggle()" type="button">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                      </div>
+
+
+                    </div>
+                    <button class="mt-2 btn btn-order btn-block" type="submit" routerLink="/pages/travels/order">Efetuar pedido</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</form>
+
+<section id="all-travel-scripts" class="mt-2">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4" *ngFor="let trajeto of travel?.pagina.trajetos">
+        <div class="travel-script card mt-2 mb-2">
+          <img src="{{trajeto.enderecoImagem}}" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="m-2 pb-2 card-title text-center">{{trajeto.nome}}</h4>
+            <p class="p-2 text-center">{{trajeto.descricao}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,10 @@
+@import '../../theme/sass/_variables.scss';
+@import '../../theme/sass/_placeholders.scss';
+
+#travel-register {
+    margin-top: 7%;
+}
+
+.btn-register {
+    @extend %main-button;
+}

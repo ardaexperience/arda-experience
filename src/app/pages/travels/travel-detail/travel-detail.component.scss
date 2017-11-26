@@ -1,0 +1,23 @@
+@import '../../theme/sass/_variables.scss';
+
+#travel-details {
+
+    .btn-order {
+        background-color: $main-color;
+        color: #fff;
+    }
+
+    .carousel-image {
+        width:100%;
+        height:400px;
+    }
+}
+
+#all-travel-scripts {
+    .travel-script {
+        img {
+            width: auto;
+            height: 250px;
+        }
+    }
+}

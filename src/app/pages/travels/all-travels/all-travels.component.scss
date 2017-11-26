@@ -1,0 +1,12 @@
+.all-travels {
+  margin: 07%;
+  
+  .card {
+    &:hover {
+      transform: scale(1.022);
+    }
+    .card-title {
+      text-align: center;
+    }
+  }
+}
