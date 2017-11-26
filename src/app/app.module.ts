@@ -1,21 +1,17 @@
+import { PagesModule } from './pages/pages.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { OwlModule } from 'ngx-owl-carousel';
-
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { LOCALE_ID } from '@angular/core';
 
-import { NavbarModule } from './pages/navbar/navbar.module';
-import { HeaderModule } from './pages/header/header.module';
-import { ServicesModule } from './pages/services/services.module';
-import { WhyArdaModule } from './pages/why-arda/why-arda.module';
-import { SpecialTravelsModule } from './pages/special-travels/special-travels.module';
-import { HomeTravelsModule } from './pages/home-travels/home-travels.module';
-import { LoginModule } from './pages/login/login.module';
-import { FooterModule } from './pages/footer/footer.module';
-import { ContactUsModule } from './pages/contact-us/contact-us.module';
+
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -25,16 +21,11 @@ import { ContactUsModule } from './pages/contact-us/contact-us.module';
     BrowserModule,
     NgbModule.forRoot(),
     OwlModule,
-    NavbarModule,
-    HeaderModule,
-    ServicesModule,
-    WhyArdaModule,
-    SpecialTravelsModule,
-    FooterModule,
-    HomeTravelsModule,
-    ContactUsModule
+    HttpModule,
+    PagesModule,
+    routing
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: "pt-BR" }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
