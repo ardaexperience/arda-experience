@@ -1,7 +1,6 @@
 import { Component, OnInit, HostListener, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
 
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from '../login/login.component';
 
 @Component({
@@ -13,14 +12,9 @@ export class NavbarComponent implements OnInit {
 
   public navIsFixed = false;
 
-  constructor(private modalService: NgbModal, @Inject(DOCUMENT) private document: Document) { }
+  constructor(@Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit() {
-  }
-
-  open() {
-    const modalRef = this.modalService.open(LoginComponent);
-    modalRef.componentInstance.name = 'World';
   }
 
   @HostListener('window:scroll', []) onWindowScroll() {
